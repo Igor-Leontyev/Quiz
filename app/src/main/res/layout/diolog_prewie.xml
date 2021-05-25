@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:background="@drawable/diolog_bg"
+              android:scaleType="centerCrop"
+              android:id="@+id/diolog"
+              android:layout_margin="10dp"
+              android:layout_gravity="center">
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|right|top"
+            android:layout_gravity="right">
+        <TextView
+                android:text="@string/x"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/b_close"
+                android:background="@drawable/lvl_btn_two_style"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:textColor="@android:color/background_light"
+                android:textStyle="bold"
+                tools:layout_gravity="end"
+                android:layout_margin="10dp"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_margin="10dp" android:gravity="center">
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:srcCompat="@drawable/historysmall"
+                android:id="@+id/img_task1"
+                android:layout_weight="50"/>
+        <TextView
+                android:text="@string/descriptionTask"
+                android:layout_width="match_parent"
+                android:layout_height="0dp" android:id="@+id/textView3" android:layout_weight="30"
+                android:textStyle="bold" android:textColor="@color/White_b" android:layout_margin="10dp"
+                tools:textSize="21sp"/>
+        <Button
+                android:text="@string/next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/b_continue"
+                android:background="@drawable/two_style_btn_black95" android:padding="5dp"
+                android:layout_margin="10dp" android:textSize="10sp"/>
+    </LinearLayout>
+</LinearLayout>

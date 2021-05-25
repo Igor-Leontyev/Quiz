@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Quiz</string>
+    <string name="bacgr">bacgr</string>
+    <string name="todo">TODO</string>
+    <string name="text_btn">НАЧАТЬ</string>
+    <string name="exit_btn">назад</string>
+    <string name="_1">1</string>
+    <string name="_2">2</string>
+    <string name="_3">3</string>
+    <string name="_4">4</string>
+    <string name="_5">5</string>
+    <string name="levels_t">Уровень:</string>
+    <string name="LVL_1">Уровень: 1</string>
+    <string name="x">X</string>
+    <string name="descriptionTask">     Выберите верный ответ\nили дату </string>
+    <string name="next">Продолжить</string>
+    <string name="ask_1"> Какое имя в истории \n получил царь Иван IV?</string>
+</resources>

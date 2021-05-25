@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                                                   android:layout_height="match_parent">
+
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" app:srcCompat="@drawable/bgm2" android:id="@+id/imageView"
+            android:contentDescription="@string/todo"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="1.0"
+            android:scaleType="centerCrop"/>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.084" app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="172dp" android:id="@+id/cont1" android:gravity="center">
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="@+id/imageView"
+                app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"
+                android:id="@+id/cont2" android:padding="10dp">
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:id="@+id/cont3">
+
+                <Button
+                        android:text="@string/exit_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/b_exit"
+                        android:background="@drawable/two_style_btn_black95" android:paddingLeft="5dp"
+                        android:paddingRight="5dp"/>
+            </LinearLayout>
+            <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp">
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:orientation="vertical" android:id="@+id/cont4">
+                    <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" android:id="@+id/lin1" android:padding="10dp">
+
+                        <TextView
+                                android:text="@string/_1"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp" android:id="@+id/b_lvl_1"
+                                android:background="@drawable/lvl_btn_two_style" android:textSize="25sp"
+                                android:layout_marginRight="10dp"
+                                android:gravity="center"
+                                android:textColor="@color/White_b" android:textStyle="bold"/>
+                        <TextView
+                                android:text="@string/_2"
+                                android:layout_width="50dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_height="50dp" android:id="@+id/b_lvl_2"
+                                android:background="@drawable/lvl_btn_two_style" android:textSize="25sp"
+                                android:gravity="center"
+                                android:textColor="@color/White_b" android:textStyle="bold"/>
+
+                        <TextView
+                                android:text="@string/_3"
+                                android:layout_width="50dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_height="50dp" android:id="@+id/b_lvl_3"
+                                android:background="@drawable/lvl_btn_two_style" android:textSize="25sp"
+                                android:gravity="center"
+                                android:textColor="@color/White_b" android:textStyle="bold"/>
+
+                        <TextView
+                                android:text="@string/_4"
+                                android:layout_width="50dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_height="50dp" android:id="@+id/b_lvl_4"
+                                android:background="@drawable/lvl_btn_two_style" android:textSize="25sp"
+                                android:gravity="center"
+                                android:textColor="@color/White_b" android:textStyle="bold"/>
+
+                        <TextView
+                                android:text="@string/_5"
+                                android:layout_width="50dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_height="50dp" android:id="@+id/b_lvl_5"
+                                android:background="@drawable/lvl_btn_two_style" android:textSize="25sp"
+                                android:gravity="center"
+                                android:textColor="@color/White_b" android:textStyle="bold"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" android:id="@+id/lin3" android:padding="10dp">
+
+                        <TextView
+                                android:text="6"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp" android:id="@+id/b_lvl_6"
+                                android:background="@drawable/lvl_btn_two_style" android:textSize="25sp"
+                                android:layout_marginRight="10dp"
+                                android:gravity="center"
+                                android:textColor="@color/White_b" android:textStyle="bold"/>
+                        <TextView
+                                android:text="7"
+                                android:layout_width="50dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_height="50dp" android:id="@+id/b_lvl_7"
+                                android:background="@drawable/lvl_btn_two_style" android:textSize="25sp"
+                                android:gravity="center"
+                                android:textColor="@color/White_b" android:textStyle="bold"/>
+
+                        <TextView
+                                android:text="8"
+                                android:layout_width="50dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_height="50dp" android:id="@+id/b_lvl_8"
+                                android:background="@drawable/lvl_btn_two_style" android:textSize="25sp"
+                                android:gravity="center"
+                                android:textColor="@color/White_b" android:textStyle="bold"/>
+
+                        <TextView
+                                android:text="9"
+                                android:layout_width="50dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_height="50dp" android:id="@+id/b_lvl_9"
+                                android:background="@drawable/lvl_btn_two_style" android:textSize="25sp"
+                                android:gravity="center"
+                                android:textColor="@color/White_b" android:textStyle="bold"/>
+
+                        <TextView
+                                android:text="10"
+                                android:layout_width="50dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_height="50dp" android:id="@+id/b_lvl_10"
+                                android:background="@drawable/lvl_btn_two_style" android:textSize="25sp"
+                                android:gravity="center"
+                                android:textColor="@color/White_b" android:textStyle="bold"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" android:id="@+id/lin4" android:padding="10dp">
+
+                        <TextView
+                                android:text="11"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp" android:id="@+id/b_lvl_11"
+                                android:background="@drawable/lvl_btn_two_style" android:textSize="25sp"
+                                android:layout_marginRight="10dp"
+                                android:gravity="center"
+                                android:textColor="@color/White_b" android:textStyle="bold"/>
+                        <TextView
+                                android:text="12"
+                                android:layout_width="50dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_height="50dp" android:id="@+id/b_lvl_12"
+                                android:background="@drawable/lvl_btn_two_style" android:textSize="25sp"
+                                android:gravity="center"
+                                android:textColor="@color/White_b" android:textStyle="bold"/>
+
+                        <TextView
+                                android:text="13"
+                                android:layout_width="50dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_height="50dp" android:id="@+id/b_lvl_13"
+                                android:background="@drawable/lvl_btn_two_style" android:textSize="25sp"
+                                android:gravity="center"
+                                android:textColor="@color/White_b" android:textStyle="bold"/>
+
+                        <TextView
+                                android:text="14"
+                                android:layout_width="50dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_height="50dp" android:id="@+id/b_lvl_14"
+                                android:background="@drawable/lvl_btn_two_style" android:textSize="25sp"
+                                android:gravity="center"
+                                android:textColor="@color/White_b" android:textStyle="bold"/>
+
+                        <TextView
+                                android:text="15"
+                                android:layout_width="50dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_height="50dp" android:id="@+id/b_lvl_15"
+                                android:background="@drawable/lvl_btn_two_style" android:textSize="25sp"
+                                android:gravity="center"
+                                android:textColor="@color/White_b" android:textStyle="bold"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" android:id="@+id/lin5" android:padding="10dp">
+
+                        <TextView
+                                android:text="16"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp" android:id="@+id/b_lvl_16"
+                                android:background="@drawable/lvl_btn_two_style" android:textSize="25sp"
+                                android:layout_marginRight="10dp"
+                                android:gravity="center"
+                                android:textColor="@color/White_b" android:textStyle="bold"/>
+                        <TextView
+                                android:text="17"
+                                android:layout_width="50dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_height="50dp" android:id="@+id/b_lvl_17"
+                                android:background="@drawable/lvl_btn_two_style" android:textSize="25sp"
+                                android:gravity="center"
+                                android:textColor="@color/White_b" android:textStyle="bold"/>
+
+                        <TextView
+                                android:text="18"
+                                android:layout_width="50dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_height="50dp" android:id="@+id/b_lvl_18"
+                                android:background="@drawable/lvl_btn_two_style" android:textSize="25sp"
+                                android:gravity="center"
+                                android:textColor="@color/White_b" android:textStyle="bold"/>
+
+                        <TextView
+                                android:text="19"
+                                android:layout_width="50dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_height="50dp" android:id="@+id/b_lvl_19"
+                                android:background="@drawable/lvl_btn_two_style" android:textSize="25sp"
+                                android:gravity="center"
+                                android:textColor="@color/White_b" android:textStyle="bold"/>
+
+                        <TextView
+                                android:text="20"
+                                android:layout_width="50dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_height="50dp" android:id="@+id/b_lvl_20"
+                                android:background="@drawable/lvl_btn_two_style" android:textSize="25sp"
+                                android:gravity="center"
+                                android:textColor="@color/White_b" android:textStyle="bold"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" android:id="@+id/lin6" android:padding="10dp">
+
+                        <TextView
+                                android:text="21"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp" android:id="@+id/b_lvl_21"
+                                android:background="@drawable/lvl_btn_two_style" android:textSize="25sp"
+                                android:layout_marginRight="10dp"
+                                android:gravity="center"
+                                android:textColor="@color/White_b" android:textStyle="bold"/>
+                        <TextView
+                                android:text="22"
+                                android:layout_width="50dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_height="50dp" android:id="@+id/b_lvl_22"
+                                android:background="@drawable/lvl_btn_two_style" android:textSize="25sp"
+                                android:gravity="center"
+                                android:textColor="@color/White_b" android:textStyle="bold"/>
+
+                        <TextView
+                                android:text="23"
+                                android:layout_width="50dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_height="50dp" android:id="@+id/b_lvl_23"
+                                android:background="@drawable/lvl_btn_two_style" android:textSize="25sp"
+                                android:gravity="center"
+                                android:textColor="@color/White_b" android:textStyle="bold"/>
+
+                        <TextView
+                                android:text="24"
+                                android:layout_width="50dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_height="50dp" android:id="@+id/b_lvl_24"
+                                android:background="@drawable/lvl_btn_two_style" android:textSize="25sp"
+                                android:gravity="center"
+                                android:textColor="@color/White_b" android:textStyle="bold"/>
+
+                        <TextView
+                                android:text="25"
+                                android:layout_width="50dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_height="50dp" android:id="@+id/b_lvl_25"
+                                android:background="@drawable/lvl_btn_two_style" android:textSize="25sp"
+                                android:gravity="center"
+                                android:textColor="@color/White_b" android:textStyle="bold"/>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" android:id="@+id/lin2" android:padding="10dp">
+
+                        <TextView
+                                android:text="26"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp" android:id="@+id/b_lvl_26"
+                                android:background="@drawable/lvl_btn_two_style" android:textSize="25sp"
+                                android:layout_marginRight="10dp"
+                                android:gravity="center"
+                                android:textColor="@color/White_b" android:textStyle="bold"/>
+                        <TextView
+                                android:text="27"
+                                android:layout_width="50dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_height="50dp" android:id="@+id/b_lvl_27"
+                                android:background="@drawable/lvl_btn_two_style" android:textSize="25sp"
+                                android:gravity="center"
+                                android:textColor="@color/White_b" android:textStyle="bold"/>
+
+                        <TextView
+                                android:text="28"
+                                android:layout_width="50dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_height="50dp" android:id="@+id/b_lvl_28"
+                                android:background="@drawable/lvl_btn_two_style" android:textSize="25sp"
+                                android:gravity="center"
+                                android:textColor="@color/White_b" android:textStyle="bold"/>
+
+                        <TextView
+                                android:text="29"
+                                android:layout_width="50dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_height="50dp" android:id="@+id/b_lvl_29"
+                                android:background="@drawable/lvl_btn_two_style" android:textSize="25sp"
+                                android:gravity="center"
+                                android:textColor="@color/White_b" android:textStyle="bold"/>
+
+                        <TextView
+                                android:text="30"
+                                android:layout_width="50dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_height="50dp" android:id="@+id/b_lvl_30"
+                                android:background="@drawable/lvl_btn_two_style" android:textSize="25sp"
+                                android:gravity="center"
+                                android:textColor="@color/White_b" android:textStyle="bold"/>
+
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
