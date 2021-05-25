@@ -32,8 +32,6 @@ public class Level1 extends AppCompatActivity {
 
 
 
-
-
         super.onCreate(savedInstanceState);
         setContentView(R.layout.universal);
 
@@ -166,13 +164,7 @@ public class Level1 extends AppCompatActivity {
         img_abswer_right.setClipToOutline(true);
         //код для закругления углов (конец
 
-
-        //вызов нового диалогового окна
-        dialog = new Dialog(this);//создаем новое диалоговое окно
-        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);//убираем заголовок
-        dialog.setContentView(R.layout.diolog_prewie);//путь к макету диологового окна
-        dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));// прозрачный фон за диалоговым окном
-        dialog.setCancelable(false);// невозможность закрыть системной кнопкой назад <
+        dialog = createTaskInfoDialog();
 
         TextView b_close = dialog.findViewById(R.id.b_close);
         b_close.setOnClickListener(new View.OnClickListener() {
@@ -192,7 +184,6 @@ public class Level1 extends AppCompatActivity {
         });
 
         dialog.show();// показать диалоговое окно ( запустить )
-
 
         Button b_continue  = dialog.findViewById(R.id.b_continue);
         b_continue.setOnClickListener(new View.OnClickListener() {
@@ -221,8 +212,15 @@ public class Level1 extends AppCompatActivity {
         });
     }
 
-    public void showTaskInfo(Dialog dialog){
+    public Dialog createTaskInfoDialog(){
+        //вызов нового диалогового окна
+        Dialog dialog = new Dialog(this);//создаем новое диалоговое окно
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);//убираем заголовок
+        dialog.setContentView(R.layout.diolog_prewie);//путь к макету диологового окна
+        dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));// прозрачный фон за диалоговым окном
+        dialog.setCancelable(false);// невозможность закрыть системной кнопкой назад <
 
+        return dialog;
     }
 
     public void imageExchange(){
